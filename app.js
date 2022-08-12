@@ -43,7 +43,9 @@ questionInput.addEventListener('keypress', (event) => {
 
 function handleSubmit() {
     questionContainer.classList.toggle('hide');
+    questionContainer.classList.add('fade-out');
     fortuneContainer.classList.toggle('hide');
+    fortuneContainer.classList.add('fade-in');
     const randomNum = Math.floor(Math.random() * answers.length);
     const randomAnswer = answers[randomNum];
     console.log(randomAnswer);
